@@ -35,7 +35,7 @@
 
                 {% if menu is defined %}
 
-                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+                    <nav id="sidebar" class="col-sm-3 col-lg-3" role="navigation">
 
                         <ul class="nav nav-pills nav-stacked">
                             {% for itemId, item in menu.items %}
@@ -51,20 +51,21 @@
 
                 {% endif %}
 
-                <section id="content" class="{{ menu ? 'col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10' : 'col-sm-12' }}">
+                <section id="content" class="{{ menu ? 'col-sm-offset-3 col-lg-offset-3 col-sm-9 col-lg-9' : 'col-sm-12' }}">
                     {{ content|raw }}
                 </section>
 
             </div>
         </main>
-
+		{% if footer is defined %}
         <footer>
             <div class="{{ menu ? 'container-fluid' : 'container' }}">
                 <p class="text-muted">
-                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+					{{ footer|raw }}
                 </p>
             </div>
         </footer>
+		{% endif %}
 
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

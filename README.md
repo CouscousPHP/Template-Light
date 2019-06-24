@@ -29,6 +29,7 @@ github:
 
 title: My project
 subTitle: This is a great project.
+footer: Generated with Couscous, for Conishiwa
 
 # The left menu bar
 menu:

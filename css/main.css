@@ -3,7 +3,7 @@ html {
     min-height: 100%;
 }
 body {
-    font-size: 19px;
+    font-size: 18px;
 }
 
 @media (min-width: 1200px) {
@@ -74,7 +74,9 @@ header.navbar {
 @media (min-width: 768px) {
     #sidebar {
         position:fixed;
-        margin-top: 30px;
+        margin-top: 10px;
+        height: 100%;
+        overflow: auto;
     }
 }
 @media (max-width: 960px) {
@@ -102,4 +104,8 @@ pre {
 }
 pre code {
     border: none;
+}
+
+.nav>li>a {
+    padding: 7px 10px;
 }
