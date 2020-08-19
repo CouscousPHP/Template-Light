@@ -103,3 +103,13 @@ pre {
 pre code {
     border: none;
 }
+
+table {
+    border-collapse: collapse;
+}
+td, th {
+    padding: 10px;
+}
+table, th, td {
+  border: 1px solid black;
+}
